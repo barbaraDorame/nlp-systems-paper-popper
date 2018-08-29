@@ -1,0 +1,17 @@
+metadata:
+  access_right: open
+  license: CC-BY-4.0
+  publication_type: article
+  upload_type: publication
+pipelines:
+  nlp:
+    envs:
+    - host
+    path: pipelines/nlp
+    stages:
+    - extract-text
+    - pre-process
+    - analyze
+    - plot
+popperized:
+- github/popperized
